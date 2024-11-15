@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'chat.wsgi.app'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'marco',
+        'NAME': 'Laura',
         'USER': 'marco',
         'PASSWORD': 'M@rco123!',
         'HOST': '82.112.250.19',
