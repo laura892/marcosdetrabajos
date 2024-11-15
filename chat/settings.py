@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'chat.wsgi.app'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Laura',
         'USER': 'marco',
         'PASSWORD': 'M@rco123!',
