@@ -1,14 +1,16 @@
 {
-  "builds": [
-    {
-      "src": "chat/wsgi.py",
-      "use": "@vercel/python"
-    }
-  ],
+  "builds": [{
+    "src": "chat/wsgi.py",
+    "use": "@vercel/python"
+  }],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "chat/wsgi.py"
     }
-  ]
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "chat.settings",
+    "ALLOWED_HOSTS": ".vercel.app"
+  }
 }
